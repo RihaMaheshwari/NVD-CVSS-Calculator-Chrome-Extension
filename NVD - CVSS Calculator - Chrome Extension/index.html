@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<!-- Mario -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="head"><title>
+	NVD - CVSS v3 Calculator
+</title><meta charset="UTF-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="jquery.min.js" type="text/javascript"></script>
+<link href="calculator.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body class="LTR Mozilla ENUS ContentBody">
+
+
+<form method="post" action="index.html" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="srOny9PceO6Apw7a0lODhWiTb4oDZbPWBcpXDjykYukYIQ4keDpRhM5lrfx1IeYfv4UPkN3lvnw08vhg7oZGHqxMkvONIxEXhF7rvBUEaAs=" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6NtlJr6I+I6g48rJm58N8G3LZ+6dy5peCV6VcoUD4PrB1yzpxh9o3IgsoCoKO1JPe3h8eyYykprm6lygmSc1trnNA1eHNNnkc3zg2Szv6+Rm33UDD1n/IOMLceIoBkd39ECDAAE4TLe5FFVt9L1NcoGc3ZaDN325GiQrHtMJ8QedkYPkoDVyYeJ2Fwyx9ho5z5yAIm+eLqwyhSqkknpCJ2U+4dsWEc+bbUGcWyVCH2VXT+Kp+PYJz77SOvKUdHOe6ACVDt4pdwxrWr4IiPSwGXO98naBilSJukZPD1Jn5Lw+Xy9o5LskfDXDyGnwOPbGRlbjQasbHVDVyV1w5jZ0fLN9amDVVr7dsK/g5i5zFwSEMjupuwO6TVTSYID0oNX4MV3PpQ2XpRqKGDOgj2RNGl3O1KItNjyKh+CAwxAUmFLNP9OdGsUQyE5h47DSGX85hRZFMcBf7rEpGPbMitz1PRuFREYBEHsAo9801hj9BWLkoAqex1AP4J1HMmV9WtNcdvhRDlpcOwRfX90bQlC+1Et84ZXp/8WEz7Rw2gjyaQr935Dv332Kqxyhr2LXAi7DxbliS68FHBGIctaVOWZXvXdUZOxmkmPlTGH+A16IDqc5JgCu9vKPJUC1EZmF3tyNHHUWhcm5PJSaYWjz9rmvgYvrBU1zw7Em0rFTG7kNUCvf5gVgxjrDfWVb6jBwN1zacFzKoQS1oQfIbhemskgCF0DYgvrWWzD8X/nib+0GtJPEJc9hpX1xdFS80FyDk8/IRKNRsBxjh0S5j5H47Y/nf+1CFNWmRZ3piEqkh9bnnLaReZVG49KE+jZGe66b+SsaG4cWyAYzw0uzzBWAvu2sl67/p+U+BdV4I37dmkohRG8R43DVkQQ0sDnQnElADpdDT2xFzC3dkNhhPOSNF9PpYXgNaDuAS82thKXmO9mF2nQI3o3XbVRt9hDXeAO2yWMBf78KbRcFlfN+FNz0XyO6f50AGgN78OmAWPbDbVHku/kShZYsb6roh+cJGaNxrg0WDMSRFI8e9rdo46x3JDaBFog9dGv6oMBKH+wVO/O1okXyl4qK98ULrs0JdGzZzXmt1C1oWuvl03ODx71j7Hsaf67gSqGQ0ZHhyaAhAXcewtU=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+<!-- Mario -->
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "language": "en",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDebuggingEnabled": false,
+  "applicationUrl": "/",
+  "isDialog": false,
+  "isRTL": "false"
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+
+            </ul>
+        </div><!-- /#mobile-nav-container -->
+    </div>
+
+</nav>
+
+<div id="page-content">
+
+
+
+
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_zoneCenter_CVSSV3Calculator_FormPanel">
+
+
+    <div ng-app="nvdApp.cvssV3">
+        <div ng-controller="calculatorController as vm" ng-init="vm.initPage();">
+
+            <input type="hidden" name="p$lt$WebPartZone1$zoneCenter$pageplaceholder$p$lt$WebPartZone1$zoneCenter$CVSSV3Calculator$hiddenCveId" id="hiddenCveId" />
+            <input type="hidden" name="p$lt$WebPartZone1$zoneCenter$pageplaceholder$p$lt$WebPartZone1$zoneCenter$CVSSV3Calculator$hiddenVector" id="hiddenVector" />
+
+            <h2 id="CvssHeaderText">
+                <i class="fa fa-calculator"></i><center><h1>
+									<<<<>>>>Jagskap<<<<>>>></h1>------------------------------------------------------------------------------<br>
+                Common Vulnerability Scoring System Calculator<br>
+                <small>Version 3</small></center>
+								</h2>
+						<p id="demo"></p>
+						<form name = "mario">Enter CVSS Vector: <input type="text" id="score" value="">
+							<input type="" id="out" value="">
+						<input type = "button" name="Submit" value="Submit" id = "submit">
+						<br><b><center><h2>----------------------------------------------------------------------------------</h2></center></b><br>
+						<script src="cvss3.js"></script>
+            <div id="cvss-alert-container" ng-show="showAlert" ng-cloak="ng-cloak" class="alert alert-danger" role="alert">
+                <strong class="h4Size"><i class="fa fa-exclamation-circle"></i> Alert</strong>
+                <p><span id="cvss-alert-message">Please fill in all base score metrics in order to generate a score!</span></p>
+            </div>
+
+
+            <div id="cvss-charts-container" class="row">
+
+                <div class="col-lg-8">
+
+                    <div class="row">
+
+                        <div id="cvss-base-scores-chart" class="col-lg-4"></div>
+
+                        <div id="cvss-temporal-score-chart" class="col-lg-2"></div>
+
+                        <div id="cvss-environmental-score-chart" class="col-lg-4"></div>
+
+                        <div id="cvss-overall-score-chart" class="col-lg-2"></div>
+
+                    </div>
+
+                </div>
+
+                <div id="cvss-text-score-container" class="col-lg-4 col-sm-12">
+
+                    <dl class="dl-horizontal">
+                        <dt id="cvss-base-score-cell">CVSS Base Score:        {{vm.baseScore}}</dt>
+                        <dt id="cvss-impact-score-cell">Impact Subscore:  		{{vm.impactScore}}</dt>
+                        <dt id="cvss-exploitability-score-cell">Exploitability Subscore:  {{vm.exploitScore}}</dt>
+                        <dt id="cvss-temporal-score-cell">CVSS Temporal Score:  {{vm.temporalScore}}</dt>
+                        <dt id="cvss-environmental-score-cell">CVSS Environmental Score: {{vm.environScore}}</dt>
+                        <dt id="cvss-mod-impact-score-cell">Modified Impact Subscore:  {{vm.modImpactScore}}</dt>
+                        <dt id="cvss-overall-score-cell">Overall CVSS Score:  {{vm.overallScore}}</dt>
+                    </dl>
+
+                    </div>
+
+            </div>
+
+            <div style="text-align: center;">
+             <strong>CVSS v3 Vector</strong>
+            <p id="cvss-v3-vector-cell" ng-bind-html="vm.cvssString"></p>
+            </div>
+
+            <div id="cvss-calculator-form" ng-show="vm.initComplete">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 data-toggle="tooltip" aria-controls="cvss-base-form">
+                            <span uib-tooltip="{{vm.getTip('l_bsm')}}">Base Score Metrics</span>
+                        </h3>
+                    </div>
+                    <div id="cvss-base-form" class="panel-body">
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <strong class="h4Size">Exploitability Metrics</strong>
+                               <div class="cvss-metrics-row">
+                                   <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_av')}}">Attack Vector (AV)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.av" uib-btn-radio="vm.baseData.av_n.title">Network (AV:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.av" uib-btn-radio="vm.baseData.av_a.title"> Adjacent Network (AV:A)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.av" uib-btn-radio="vm.baseData.av_l.title"> Local (AV:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.av" uib-btn-radio="vm.baseData.av_p.title">Physical (AV:P)</button>
+                                    </div>
+                                    </fieldset>
+                                </div>
+
+                                <div class="cvss-metrics-row">
+                                   <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_ac')}}">Attack Complexity (AC)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ac" uib-btn-radio="vm.baseData.ac_l.title">Low (AC:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ac" uib-btn-radio="vm.baseData.ac_h.title">High (AC:H)</button>
+                                    </div>
+                                     </fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_pr')}}">Privileges Required (PR)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.pr" uib-btn-radio="vm.baseData.pr_n.title">None (PR:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.pr" uib-btn-radio="vm.baseData.pr_l.title">Low (PR:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.pr" uib-btn-radio="vm.baseData.pr_h.title">High (PR:H)</button>
+                                    </div>
+                                        </fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_ui')}}">User Interaction (UI)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ui" uib-btn-radio="vm.baseData.ui_n.title">None (UI:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ui" uib-btn-radio="vm.baseData.ui_r.title">Required (UI:R)</button>
+                                    </div>
+                                     </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="cvss-metrics-row">
+                                  <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_scp')}}">Scope (S)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.scp" uib-btn-radio="vm.baseData.scp_u.title">Unchanged (S:U)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.scp" uib-btn-radio="vm.baseData.scp_c.title">Changed (S:C)</button>
+                                    </div>
+                                      </fieldset>
+                                </div>
+                                <strong class="h4Size">Impact Metrics</strong>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_ci')}}">Confidentiality Impact (C)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ci" uib-btn-radio="vm.baseData.ci_n.title">None (C:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ci" uib-btn-radio="vm.baseData.ci_l.title">Low (C:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ci" uib-btn-radio="vm.baseData.ci_h.title">High (C:H)</button>
+                                    </div>
+                                        </fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                   <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_ii')}}">Integrity Impact (I)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ii" uib-btn-radio="vm.baseData.ii_n.title">None (I:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ii" uib-btn-radio="vm.baseData.ii_l.title">Low (I:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ii" uib-btn-radio="vm.baseData.ii_h.title">High (I:H)</button>
+                                    </div>
+                                       </fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_ai')}}">Availability Impact (A)*</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ai" uib-btn-radio="vm.baseData.ai_n.title">None (A:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ai" uib-btn-radio="vm.baseData.ai_l.title">Low (A:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.baseSelect.ai" uib-btn-radio="vm.baseData.ai_h.title">High (A:H)</button>
+                                    </div>
+                                        </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p><span class="required-text">*</span> - All base metrics are required to generate a base score.</p>
+
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 data-toggle="tooltip" aria-controls="cvss-temporal-form">
+                            <span uib-tooltip="{{vm.getTip('l_tsm')}}">Temporal Score Metrics</span>
+                        </h3>
+                    </div>
+                    <div id="cvss-temporal-form" class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_exp')}}">Exploitability (E)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.ex" uib-btn-radio="vm.temporalData.ex_nd.title">Not Defined (E:X)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.ex" uib-btn-radio="vm.temporalData.ex_u.title">Unproven that exploit exists (E:U)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.ex" uib-btn-radio="vm.temporalData.ex_poc.title">Proof of concept code (E:P)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.ex" uib-btn-radio="vm.temporalData.ex_f.title">Functional exploit exists (E:F)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.ex" uib-btn-radio="vm.temporalData.ex_h.title">High (E:H)</button>
+                                    </div></fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_rl')}}">Remediation Level (RL)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rl" uib-btn-radio="vm.temporalData.rl_nd.title">Not Defined (RL:X)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rl" uib-btn-radio="vm.temporalData.rl_of.title">Official fix (RL:O)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rl" uib-btn-radio="vm.temporalData.rl_tf.title">Temporary fix (RL:T)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rl" uib-btn-radio="vm.temporalData.rl_w.title">Workaround (RL:W)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rl" uib-btn-radio="vm.temporalData.rl_u.title">Unavailable (RL:U)</button>
+                                    </div></fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_rc')}}">Report Confidence (RC)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rc" uib-btn-radio="vm.temporalData.rc_nd.title">Not Defined (RC:X)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rc" uib-btn-radio="vm.temporalData.rc_uc.title">Unknown (RC:U)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rc" uib-btn-radio="vm.temporalData.rc_ur.title">Reasonable (RC:R)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.temporalSelect.rc" uib-btn-radio="vm.temporalData.rc_c.title">Confirmed (RC:C)</button>
+                                    </div></fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 data-toggle="tooltip" aria-controls="cvss-environmental-form">
+                            <span uib-tooltip="{{vm.getTip('l_esm')}}">Environmental Score Metrics</span>
+                        </h3>
+                    </div>
+                    <div id="cvss-environmental-form" class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12">
+                                <strong class="h4Size">Base Modifiers</strong>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mav')}}">Attack Vector (AV)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mav" uib-btn-radio="vm.environData.mav_nd.title">Not Defined (MAV:X)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mav" uib-btn-radio="vm.environData.mav_n.title">Network (MAV:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mav" uib-btn-radio="vm.environData.mav_a.title">Adjacent Network (MAV:A)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mav" uib-btn-radio="vm.environData.mav_l.title">Local (MAV:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mav" uib-btn-radio="vm.environData.mav_p.title">Physical (MAV:P)</button>
+                                    </div>
+                                        </fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mac')}}">Attack Complexity (AC)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" uib-tooltip="{{vm.getTip('b_macx')}}" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mac" uib-btn-radio="vm.environData.mac_nd.title">Not Defined (MAC:X)</button>
+                                        <button type="button" uib-tooltip="{{vm.getTip('b_macl')}}" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mac" uib-btn-radio="vm.environData.mac_l.title">Low (MAC:L)</button>
+                                        <button type="button" uib-tooltip="{{vm.getTip('b_mach')}}" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mac" uib-btn-radio="vm.environData.mac_h.title">High (MAC:H)</button>
+                                    </div></fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mpr')}}">Privileges Required (PR)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mpr" uib-btn-radio="vm.environData.mpr_nd.title">Not Defined (MPR:X)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mpr" uib-btn-radio="vm.environData.mpr_n.title">None (MPR:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mpr" uib-btn-radio="vm.environData.mpr_l.title">Low (MPR:L)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mpr" uib-btn-radio="vm.environData.mpr_h.title">High (MPR:H)</button>
+                                    </div>
+                                        </fieldset>
+                                </div>
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mui')}}">User Interaction (UI)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mui" uib-btn-radio="vm.environData.mui_nd.title">Not Defined (MUI:X)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mui" uib-btn-radio="vm.environData.mui_n.title">None (MUI:N)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mui" uib-btn-radio="vm.environData.mui_r.title">Required (MUI:R)</button>
+                                    </div>
+                                        </fieldset>
+                                </div>
+
+
+                                <div class="cvss-metrics-row">
+                                    <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mscp')}}">Scope (S)</legend>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mscp" uib-btn-radio="vm.environData.mscp_nd.title">Not Defined (MS:X)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mscp" uib-btn-radio="vm.environData.mscp_u.title">Unchanged (MS:U)</button>
+                                        <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mscp" uib-btn-radio="vm.environData.mscp_c.title">Changed (MS:C)</button>
+                                    </div></fieldset>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-7 col-md-12">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <strong class="h4Size">Impact Metrics</strong>
+                                        <div class="cvss-metrics-row">
+                                            <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mci')}}">Confidentiality Impact (C)</legend>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mci" uib-btn-radio="vm.environData.mci_nd.title">Not Defined (MC:X)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mci" uib-btn-radio="vm.environData.mci_n.title">None (MC:N)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mci" uib-btn-radio="vm.environData.mci_l.title">Low (MC:L)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mci" uib-btn-radio="vm.environData.mci_h.title">High (MC:H)</button>
+                                            </div>
+                                                </fieldset>
+                                        </div>
+                                        <div class="cvss-metrics-row">
+                                            <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mii')}}">Integrity Impact (I)</legend>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mii" uib-btn-radio="vm.environData.mii_nd.title">Not Defined (MI:X)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mii" uib-btn-radio="vm.environData.mii_n.title">None (MI:N)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mii" uib-btn-radio="vm.environData.mii_l.title">Low (MI:L)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mii" uib-btn-radio="vm.environData.mii_h.title">High (MI:H)</button>
+                                            </div></fieldset>
+                                        </div>
+                                        <div class="cvss-metrics-row">
+                                            <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_mai')}}">Availability Impact (A)</legend>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mai" uib-btn-radio="vm.environData.mai_nd.title">Not Defined (MA:X)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mai" uib-btn-radio="vm.environData.mai_n.title">None (MA:N)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mai" uib-btn-radio="vm.environData.mai_l.title">Low (MA:L)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.mai" uib-btn-radio="vm.environData.mai_h.title">High (MA:H)</button>
+                                            </div></fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <strong class="h4Size">Impact Subscore Modifiers</strong>
+                                        <div class="cvss-metrics-row">
+                                            <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_ecr')}}">Confidentiality Requirement (CR)</legend>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.cr" uib-btn-radio="vm.environData.cr_nd.title">Not Defined (CR:X)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.cr" uib-btn-radio="vm.environData.cr_l.title">Low (CR:L)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.cr" uib-btn-radio="vm.environData.cr_m.title">Medium (CR:M)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.cr" uib-btn-radio="vm.environData.cr_h.title">High (CR:H)</button>
+                                            </div></fieldset>
+                                        </div>
+                                        <div class="cvss-metrics-row">
+                                            <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_eir')}}">Integrity Requirement (IR)</legend>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ir" uib-btn-radio="vm.environData.ir_nd.title">Not Defined (IR:X)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ir" uib-btn-radio="vm.environData.ir_l.title">Low (IR:L)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ir" uib-btn-radio="vm.environData.ir_m.title">Medium (IR:M)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ir" uib-btn-radio="vm.environData.ir_h.title">High (IR:H)</button>
+                                            </div></fieldset>
+                                        </div>
+                                        <div class="cvss-metrics-row">
+                                            <fieldset>
+                                    <legend data-toggle="tooltip" title="{{vm.getTip('l_ear')}}">Availability Requirement (AR)</legend>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ar" uib-btn-radio="vm.environData.ar_nd.title">Not Defined (AR:X)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ar" uib-btn-radio="vm.environData.ar_l.title">Low (AR:L)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ar" uib-btn-radio="vm.environData.ar_m.title">Medium (AR:M)</button>
+                                                <button type="button" class="btn btn-default" ng-change="vm.setScore()" ng-model="vm.environSelect.ar" uib-btn-radio="vm.environData.ar_h.title">High (AR:H)</button>
+                                            </div></fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- All required javascript files -->
+    <script type="text/javascript" src="js/angular/angular.js"></script>
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="/NVD/media/js/jqplot/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="js/jqplot/jquery.jqplot.js"></script>
+    <script type="text/javascript" src="js/angular-bootstrap/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="js/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.module.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.controller.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.baseCalc.service.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.baseComb.factory.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.baseData.factory.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.environCalc.service.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.environData.factory.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.plot.service.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.temporalCalc.service.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.temporalData.factory.js"></script>
+    <script type="text/javascript" src="js/nvdApp/cvssV3/cvssV3.tooltip.factory.js"></script>
+
+</div>
+</form>
+</body>
+</html>
+<!-- Mario -->

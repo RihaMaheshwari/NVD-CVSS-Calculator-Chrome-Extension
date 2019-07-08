@@ -1,0 +1,71 @@
+#score-equation-dialog,
+#cvss-alert-container {
+    display: none;
+}
+
+#cvss-base-scores-chart {
+    height:200px;
+    float:left;
+}
+
+#cvss-temporal-score-chart,
+#cvss-overall-score-chart {
+    height:200px;
+    float:left;
+}
+
+#cvss-environmental-score-chart {
+    height:200px;
+    float:left;
+}
+
+
+/* Calculator Form Area */
+
+/* Breaking label and btn-groups onto separate lines */
+#cvss-calculator-form .panel-body label {
+    display:block;
+    margin-bottom: 0;
+}
+
+#cvss-calculator-form .panel-heading {
+    padding: 5px 10px;
+    width: 700px;
+    border-bottom: 1px solid transparent;
+}
+
+#cvss-calculator-form .panel {
+    margin-bottom: 10px;
+}
+
+#cvss-calculator-form .panel-body {
+    padding: 10px;
+    padding-top: 5px;
+}
+
+
+
+
+/* CVSS Calculator "Buttons" */
+#cvss-calculator-form label.btn.btn-default.active {
+    background-color: #004273;
+    color: white;
+    font-weight: normal;
+}
+
+#cvss-calculator-form button.btn.btn-default.active {
+    background-color: #004273;
+    color: white;
+    font-weight: normal;
+}
+
+#cvss-calculator-form .metric-label {
+    font-size: 0.95rem;
+}
+
+#cvss-calculator-form legend {
+    font-size: 1.1rem;
+    border-bottom: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

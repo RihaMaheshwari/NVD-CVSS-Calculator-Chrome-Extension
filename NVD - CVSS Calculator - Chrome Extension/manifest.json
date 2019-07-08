@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Mario",
+  "version": "0.1",
+  "icons": {
+  },
+  "description": "Filters out filthy words from document titles",
+  "browser_action": {  "default_popup": "index.html"},
+  "content_scripts": [
+    {
+      "matches": ["https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator.html"],
+      "js":["filter.js"],
+      "js":["cvss3.js"]
+    }
+  ]
+}
